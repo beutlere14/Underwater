@@ -10,10 +10,9 @@ using UnityEngine.SceneManagement;
 public class Health : MonoBehaviour
 {
    public GameManager gameManager;
-   private Transform respawnPoint;
     public float scoreBonus;
-    public string gameOverLevel = "LoadingScene";
-
+    public string gameOverLevel = "GameOverScene";
+    public float lives;
 
     public float currentHealth;
     public float maxHealth;
@@ -37,10 +36,6 @@ public class Health : MonoBehaviour
     {
         currentHealth = maxHealth;
 
-        if (gameManager != null)
-        {
-            respawnPoint = gameManager.playerSpawnTransform.transform;
-        }
     }
 
     private void Update()
@@ -106,7 +101,7 @@ public class Health : MonoBehaviour
        
 
         Debug.Log(source.name + " killed " + gameObject.name + ".");
-        //When a tank dies it spawns an explosion and set timer for it to go off
+        //When scuba character dies it spawns an explosion and set timer for it to go off
         Explode();
         //Destroy(gameObject);
     }
@@ -115,23 +110,11 @@ public class Health : MonoBehaviour
     {
         addKillScore();
 
-
-        if (gameObject.tag == "Player")
-        {
-            if (respawnPoint != null)
-            {
-                if (gameManager != null)
-                {
-                    // to increment life down and load in new map
-                    Invoke("mapLifeReset", .1f);
-                  //  gameObject.transform.position = new Vector3(respawnPoint.position.x, respawnPoint.position.y, respawnPoint.position.z);
-
-                }
-            }
-        }
-
         //Spawns Explosion
-        Instantiate(whatToSpawn, transform.position, transform.rotation);
+        if (whatToSpawn != null)
+        {
+            Instantiate(whatToSpawn, transform.position, transform.rotation);
+        }
         //Creates a delay equal to deathDelay varible
         Invoke("TrueDead", deathDelay);
     }
@@ -140,7 +123,8 @@ public class Health : MonoBehaviour
     {
         if (gameObject.tag == "Player")
         {
-           
+           loseGame();
+
         }
 
         else
@@ -161,47 +145,12 @@ public class Health : MonoBehaviour
     }
 
 
-    public void mapLifeReset()
+    public void loseGame()
     {
-        if (gameManager != null)
-        {
-
-            gameManager.lives--;
-
-            //0 lives is your last life
-
-            if (gameManager.lives > -1)
-            {
-
-
-
-                currentHealth = maxHealth;
-
-                //  gameManager.reload();
-
-
-                Invoke("positionChange", .1f);
-            }
-            else
-            {
-              //  gameManager.destroyGameManager();
-                SceneManager.LoadScene(gameOverLevel);
-            }
-        
-
-
-
-        }
+        //  gameManager.destroyGameManager();
+        SceneManager.LoadScene(gameOverLevel);
     }
 
-
-    public void positionChange()
-    {
-        gameObject.transform.position = new Vector3(respawnPoint.position.x, respawnPoint.position.y, respawnPoint.position.z);
-    }
-
-
- 
   
 
 }
