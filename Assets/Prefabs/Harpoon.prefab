@@ -543,6 +543,7 @@ GameObject:
   - component: {fileID: 8124856822047234002}
   - component: {fileID: 4542879092419523011}
   - component: {fileID: 5935850082556527165}
+  - component: {fileID: 264907142785533692}
   m_Layer: 0
   m_Name: Harpoon
   m_TagString: Untagged
@@ -614,6 +615,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &264907142785533692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9145032952038024024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1427fe5787bb0464cbda072fa2fafac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageDone: 5
+  owner: {fileID: 0}
+  whatToSpawn: {fileID: 0}
+  m_AudioSource: {fileID: 0}
+  spawnedSound: {fileID: 0}
 --- !u!1001 &1478405177063141463
 PrefabInstance:
   m_ObjectHideFlags: 0

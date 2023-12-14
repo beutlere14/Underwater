@@ -46,7 +46,7 @@ public class ScubaPawn : Pawn
         }
         else
         {
-            Debug.LogWarning("Warning: No Mover in TankPawn.MoveForward()!");
+            Debug.LogWarning("Warning: No Mover in ScubaPawn.MoveForward()!");
         }
     }
 

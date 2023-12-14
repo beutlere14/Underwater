@@ -560,9 +560,10 @@ GameObject:
   - component: {fileID: 8146231482400655711}
   - component: {fileID: 3516721832147368495}
   - component: {fileID: 4269722518580185395}
+  - component: {fileID: 3665240153845935484}
   m_Layer: 0
   m_Name: SubaCharacter
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -688,6 +689,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &3665240153845935484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2159963958919120294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 098ed5aaab7449d4e81eb496acef2b4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeDistance: 0
 --- !u!1 &2910479342120845540
 GameObject:
   m_ObjectHideFlags: 0

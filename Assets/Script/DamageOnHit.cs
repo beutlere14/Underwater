@@ -32,12 +32,16 @@ public class DamageOnHit : MonoBehaviour
             }
 
             //Destroy the projectile when it hits anything, even if it didn't do damage
-            Instantiate(whatToSpawn, transform.position, transform.rotation);
-
-            //Spawing sound if there is one to spawn
-            if (spawnedSound != null)
+            if (whatToSpawn != null)
             {
-                m_AudioSource.clip = spawnedSound;
+                Instantiate(whatToSpawn, transform.position, transform.rotation);
+
+
+                //Spawing sound if there is one to spawn
+                if (spawnedSound != null)
+                {
+                    m_AudioSource.clip = spawnedSound;
+                }
             }
             Destroy(gameObject);
         }

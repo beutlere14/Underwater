@@ -28,7 +28,8 @@ public class AIController : Controller
         base.Start();
 
         TargetPlayerOne();
-       // TargetNearestTank();
+       // TargetNearestScuba();
+
     }
 
     // Update is called once per frame
@@ -53,8 +54,8 @@ public class AIController : Controller
         if (target == null)
         {
             Debug.Log("Retargeting");
-            // TargetPlayerOne();
-            TargetNearestTank();
+            TargetPlayerOne();
+            //TargetNearestScuba();
         }
         else
         {
@@ -62,7 +63,7 @@ public class AIController : Controller
             //Idle(target);
             CanHear(target);
             CanSee(target);
-            //TargetNearestTank();
+            //TargetNearestScuba();
         }
     }
     
@@ -90,31 +91,31 @@ public class AIController : Controller
     }
 
     //This one accidentally targets itself since it too is a tank
-    protected void TargetNearestTank()
+    protected void TargetNearestScuba()
     {
         // Get a list of all the tanks (pawns)
-        Pawn[] allTanks = FindObjectsOfType<Pawn>();
+        Pawn[] allScubas = FindObjectsOfType<Pawn>();
 
         // Assume that the first tank is closest
-        Pawn closestTank = allTanks[0];
-        float closestTankDistance = Vector3.Distance(pawn.transform.position, closestTank.transform.position);
+        Pawn closestScuba = allScubas[0];
+        float closestScubaDistance = Vector3.Distance(pawn.transform.position, closestScuba.transform.position);
 
         // Iterate through them one at a time
-        foreach (Pawn tank in allTanks)
+        foreach (Pawn scuba in allScubas)
         {
-            if (tank.CompareTag("Player"))
+            if (scuba.CompareTag("Player"))
             {
                 // If this one is closer than the closest
-                if (Vector3.Distance(pawn.transform.position, tank.transform.position) <= closestTankDistance)
+                if (Vector3.Distance(pawn.transform.position, scuba.transform.position) <= closestScubaDistance)
                 {
                     // It is the closest
-                    closestTank = tank;
-                    closestTankDistance = Vector3.Distance(pawn.transform.position, closestTank.transform.position);
+                    closestScuba = scuba;
+                    closestScubaDistance = Vector3.Distance(pawn.transform.position, closestScuba.transform.position);
                 }
             }
 
             // Target the closest tank
-            target = closestTank.gameObject;
+            target = closestScuba.gameObject;
         }
     }
     //Needs some edits once we have more working states
