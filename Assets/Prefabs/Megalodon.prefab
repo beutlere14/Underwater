@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6155987797396678802}
   - component: {fileID: -8526489767952447829}
   m_Layer: 0
-  m_Name: SharkEnemy
+  m_Name: Megalodon
   m_TagString: Shark
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,8 +32,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 5.27, y: 5.27, z: 5.27}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6331511844341336310}
   m_Father: {fileID: 0}
@@ -57,8 +57,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1.2272158, z: 4.6638217}
-  m_Center: {x: 0, y: 0.11360788, z: -2.705332}
+  m_Size: {x: 1, y: 1.322227, z: 4.633755}
+  m_Center: {x: 0, y: 0.06610237, z: -2.7203681}
 --- !u!114 &4160497535936073744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -355,8 +355,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.6204597, y: 0.79791594, z: 0.83058715}
-  m_Center: {x: 0.0051836967, y: 0.98578143, z: 1.8166133}
+  m_Size: {x: 0.6204597, y: 1.0428047, z: 1.0387788}
+  m_Center: {x: 0.005183704, y: 0.9769419, z: 1.6649626}
 --- !u!114 &886068198985998432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -369,9 +369,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1427fe5787bb0464cbda072fa2fafac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageDone: 10
+  damageDone: 30
   owner: {fileID: 1018175200503883419}
   whatToSpawn: {fileID: 0}
-  sharkAttackTimer: 2
+  sharkAttackTimer: 3
   m_AudioSource: {fileID: 0}
   spawnedSound: {fileID: 0}

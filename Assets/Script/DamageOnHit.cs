@@ -7,6 +7,7 @@ public class DamageOnHit : MonoBehaviour
     public float damageDone;
     public Pawn owner;
     public Transform whatToSpawn;
+    public float sharkAttackTimer = 2;
 
     //Sounds
     public AudioSource m_AudioSource;
@@ -29,6 +30,7 @@ public class DamageOnHit : MonoBehaviour
             if (otherHealth != null)
             {
                 otherHealth.TakeDamage(damageDone, owner);
+                Debug.Log("Damage Done.");
             }
 
             //Destroy the projectile when it hits anything, even if it didn't do damage
@@ -43,7 +45,21 @@ public class DamageOnHit : MonoBehaviour
                     m_AudioSource.clip = spawnedSound;
                 }
             }
-            Destroy(gameObject);
+            if (CompareTag("Shark"))
+            {
+                GetComponent<BoxCollider>().isTrigger = false;
+                Invoke("sharkDelay", sharkAttackTimer);
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
+    }
+
+    //so when the shark attacks, it delays its next attack for a little bit
+    public void sharkDelay()
+    {
+        GetComponent<BoxCollider>().isTrigger= true;
     }
 }
