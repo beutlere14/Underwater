@@ -10,6 +10,7 @@ public class SoundChange : MonoBehaviour
     public AudioClip main_Clip;
     public AudioClip mainMenu_Clip;
     public AudioClip gameOver_Clip;
+    public AudioClip winScreen_Clip;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +22,7 @@ public class SoundChange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (SceneManager.GetActiveScene().name == "Main" || SceneManager.GetActiveScene().name == "MuliplayerTest")
+        if (SceneManager.GetActiveScene().name == "Main" )
         {
             // if not already playing main clip
             if (m_AudioSource.clip != main_Clip)
@@ -41,7 +42,7 @@ public class SoundChange : MonoBehaviour
             }
            
         }
-        if(SceneManager.GetActiveScene().name == "LoadingScene")
+        if(SceneManager.GetActiveScene().name == "LoseScreen")
         {
             // if not already playing gameOver Clip
             if (m_AudioSource.clip != gameOver_Clip)
@@ -50,6 +51,16 @@ public class SoundChange : MonoBehaviour
                  m_AudioSource.Play();
             }
           
+        }
+        if (SceneManager.GetActiveScene().name == "WinScreen")
+        {
+            // if not already playing gameOver Clip
+            if (m_AudioSource.clip != winScreen_Clip)
+            {
+                m_AudioSource.clip = winScreen_Clip;
+                m_AudioSource.Play();
+            }
+
         }
     }
 }
