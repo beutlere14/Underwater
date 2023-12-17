@@ -60,6 +60,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd1491b31f8c22e4b9f79a7145ec4ed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneName: WinScreen
 --- !u!65 &1583271563961921158
 BoxCollider:
   m_ObjectHideFlags: 0
