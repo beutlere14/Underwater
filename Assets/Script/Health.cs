@@ -11,7 +11,7 @@ public class Health : MonoBehaviour
 {
    public GameManager gameManager;
     public float scoreBonus;
-    public string gameOverLevel = "GameOverScene";
+    public string gameOverLevel = "LoseScreen";
     public float lives;
 
     public float currentHealth;
@@ -100,7 +100,7 @@ public class Health : MonoBehaviour
     {
        
 
-        Debug.Log(source.name + " killed " + gameObject.name + ".");
+        //Debug.Log(source.name + " killed " + gameObject.name + ".");
         //When scuba character dies it spawns an explosion and set timer for it to go off
         Explode();
         //Destroy(gameObject);

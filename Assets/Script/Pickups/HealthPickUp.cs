@@ -7,7 +7,7 @@ public class HealthPickUp : Pickup
     public HealthPowerup powerup;
 
     //Points to add to score
-    public float bonusPoints = 50;
+    public float bonusPoints = 100;
     //to interact with game manager to add score
     public GameManager gameManager;
 
@@ -47,3 +47,4 @@ public class HealthPickUp : Pickup
         }
     }
 }
+

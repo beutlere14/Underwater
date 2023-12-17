@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/ExtraStuff/OutdoorsScene.unity
-    guid: 8124e5870f4fd4c779e7a5f994e84ad1
+    path: Assets/Scenes/MainMenu.unity
+    guid: cdd3877452eae664b93a3c340863ae79
+  - enabled: 1
+    path: Assets/Scenes/OptionsMenu.unity
+    guid: a7d526f6252fa2443839c323b36941bf
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: 005b8bfee94b8c54cbdc2046f0ae3898
+  - enabled: 1
+    path: Assets/Scenes/LoseScreen.unity
+    guid: 53a9f4e1a8e8e714bb264a06ddcbdcb4
+  - enabled: 1
+    path: Assets/Scenes/WinScreen.unity
+    guid: 79e5c9e02cec0c24e9b9abc46091fbf1
   m_configObjects: {}

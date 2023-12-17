@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6632947053056061847}
   - component: {fileID: 9220640877781858094}
   - component: {fileID: 4766192999705986909}
+  - component: {fileID: 7119503379315744131}
   m_Layer: 0
   m_Name: SharkEnemy (1)
   m_TagString: Shark
@@ -154,6 +155,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7119503379315744131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628967134626101983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8693f3e441fe9ba4db04b31433c58302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: -3209058485559026615, guid: 66b2d0ee66567fb49b5623b8d4d66101,
+    type: 3}
+  scoreBonus: 100
+  gameOverLevel: GameOverScene
+  lives: 0
+  currentHealth: 0
+  maxHealth: 5
+  whatToSpawn: {fileID: 1108104211790005591, guid: 95c568f025e056d4cb94e20a8d0de129,
+    type: 3}
+  deathDelay: 0
+  cantLoseHealth: 0
 --- !u!1 &909781296657889248
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,6 +193,7 @@ GameObject:
   - component: {fileID: 3997094556057737974}
   - component: {fileID: 3168780505034946480}
   - component: {fileID: 7386826167406780111}
+  - component: {fileID: 4816195153444162211}
   m_Layer: 0
   m_Name: SharkEnemy
   m_TagString: Shark
@@ -308,6 +333,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4816195153444162211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909781296657889248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8693f3e441fe9ba4db04b31433c58302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: -3209058485559026615, guid: 66b2d0ee66567fb49b5623b8d4d66101,
+    type: 3}
+  scoreBonus: 100
+  gameOverLevel: GameOverScene
+  lives: 0
+  currentHealth: 0
+  maxHealth: 5
+  whatToSpawn: {fileID: 1108104211790005591, guid: 95c568f025e056d4cb94e20a8d0de129,
+    type: 3}
+  deathDelay: 0
+  cantLoseHealth: 0
 --- !u!1 &2738267609117880482
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,6 +371,7 @@ GameObject:
   - component: {fileID: 6102070596466461238}
   - component: {fileID: 4745507355191473673}
   - component: {fileID: 6555807464617731508}
+  - component: {fileID: 3350736950161543191}
   m_Layer: 0
   m_Name: SharkEnemy (5)
   m_TagString: Shark
@@ -462,6 +511,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3350736950161543191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2738267609117880482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8693f3e441fe9ba4db04b31433c58302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: -3209058485559026615, guid: 66b2d0ee66567fb49b5623b8d4d66101,
+    type: 3}
+  scoreBonus: 100
+  gameOverLevel: GameOverScene
+  lives: 0
+  currentHealth: 0
+  maxHealth: 5
+  whatToSpawn: {fileID: 1108104211790005591, guid: 95c568f025e056d4cb94e20a8d0de129,
+    type: 3}
+  deathDelay: 0
+  cantLoseHealth: 0
 --- !u!1 &2838884967557353994
 GameObject:
   m_ObjectHideFlags: 0
@@ -477,6 +549,7 @@ GameObject:
   - component: {fileID: 720338147663265051}
   - component: {fileID: 4844904508467312673}
   - component: {fileID: 6184508609725398804}
+  - component: {fileID: 6881984193443872491}
   m_Layer: 0
   m_Name: SharkEnemy (6)
   m_TagString: Shark
@@ -616,6 +689,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6881984193443872491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2838884967557353994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8693f3e441fe9ba4db04b31433c58302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: -3209058485559026615, guid: 66b2d0ee66567fb49b5623b8d4d66101,
+    type: 3}
+  scoreBonus: 100
+  gameOverLevel: GameOverScene
+  lives: 0
+  currentHealth: 0
+  maxHealth: 5
+  whatToSpawn: {fileID: 1108104211790005591, guid: 95c568f025e056d4cb94e20a8d0de129,
+    type: 3}
+  deathDelay: 0
+  cantLoseHealth: 0
 --- !u!1 &3756843197851510874
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,6 +727,7 @@ GameObject:
   - component: {fileID: 526334210054685242}
   - component: {fileID: 239881115429130899}
   - component: {fileID: 7606250029323020483}
+  - component: {fileID: 857027461956239102}
   m_Layer: 0
   m_Name: SharkEnemy (2)
   m_TagString: Shark
@@ -770,6 +867,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &857027461956239102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3756843197851510874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8693f3e441fe9ba4db04b31433c58302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: -3209058485559026615, guid: 66b2d0ee66567fb49b5623b8d4d66101,
+    type: 3}
+  scoreBonus: 100
+  gameOverLevel: GameOverScene
+  lives: 0
+  currentHealth: 0
+  maxHealth: 5
+  whatToSpawn: {fileID: 1108104211790005591, guid: 95c568f025e056d4cb94e20a8d0de129,
+    type: 3}
+  deathDelay: 0
+  cantLoseHealth: 0
 --- !u!1 &4454994103434909339
 GameObject:
   m_ObjectHideFlags: 0
@@ -823,6 +943,7 @@ GameObject:
   - component: {fileID: 2066349122045941267}
   - component: {fileID: 4031791642349385626}
   - component: {fileID: 6911819092745252536}
+  - component: {fileID: 5917483358562914019}
   m_Layer: 0
   m_Name: SharkEnemy (3)
   m_TagString: Shark
@@ -965,6 +1086,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5917483358562914019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4713723034077022305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8693f3e441fe9ba4db04b31433c58302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: -3209058485559026615, guid: 66b2d0ee66567fb49b5623b8d4d66101,
+    type: 3}
+  scoreBonus: 100
+  gameOverLevel: GameOverScene
+  lives: 0
+  currentHealth: 0
+  maxHealth: 5
+  whatToSpawn: {fileID: 1108104211790005591, guid: 95c568f025e056d4cb94e20a8d0de129,
+    type: 3}
+  deathDelay: 0
+  cantLoseHealth: 0
 --- !u!1 &4956507116153150856
 GameObject:
   m_ObjectHideFlags: 0
@@ -980,6 +1124,7 @@ GameObject:
   - component: {fileID: 9048680490228163005}
   - component: {fileID: 8452386543335343689}
   - component: {fileID: 3190806005818350165}
+  - component: {fileID: 2817949788611553931}
   m_Layer: 0
   m_Name: SharkEnemy (4)
   m_TagString: Shark
@@ -1119,6 +1264,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2817949788611553931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4956507116153150856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8693f3e441fe9ba4db04b31433c58302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: -3209058485559026615, guid: 66b2d0ee66567fb49b5623b8d4d66101,
+    type: 3}
+  scoreBonus: 100
+  gameOverLevel: GameOverScene
+  lives: 0
+  currentHealth: 0
+  maxHealth: 5
+  whatToSpawn: {fileID: 1108104211790005591, guid: 95c568f025e056d4cb94e20a8d0de129,
+    type: 3}
+  deathDelay: 0
+  cantLoseHealth: 0
 --- !u!1001 &258894132585797102
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1464,8 +1632,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.6204597, y: 0.79791594, z: 0.83058715}
-  m_Center: {x: 0.0051836967, y: 0.98578143, z: 1.8166133}
+  m_Size: {x: 0.6204597, y: 0.40870887, z: 0.36222145}
+  m_Center: {x: 0.0051836977, y: 0.79117775, z: 1.8572305}
 --- !u!114 &1889122109663556939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1616,8 +1784,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.6204597, y: 0.79791594, z: 0.83058715}
-  m_Center: {x: 0.0051836967, y: 0.98578143, z: 1.8166133}
+  m_Size: {x: 0.6204597, y: 0.32299283, z: 0.3823657}
+  m_Center: {x: 0.0051836977, y: 0.7483198, z: 1.74772}
 --- !u!114 &6158870144832046231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1912,8 +2080,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.6204597, y: 0.79791594, z: 0.83058715}
-  m_Center: {x: 0.0051836967, y: 0.98578143, z: 1.8166133}
+  m_Size: {x: 0.6204597, y: 0.34544834, z: 0.5803988}
+  m_Center: {x: 0.0051836977, y: 0.75954765, z: 1.8516475}
 --- !u!114 &8008561261064346822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2058,8 +2226,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.6204597, y: 0.79791594, z: 0.83058715}
-  m_Center: {x: 0.0051836967, y: 0.98578143, z: 1.8166133}
+  m_Size: {x: 0.6204597, y: 0.27406022, z: 0.39339414}
+  m_Center: {x: 0.0051836977, y: 0.8517509, z: 1.7725246}
 --- !u!114 &8121121872393119733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2204,8 +2372,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.6204597, y: 0.79791594, z: 0.83058715}
-  m_Center: {x: 0.0051836967, y: 0.98578143, z: 1.8166133}
+  m_Size: {x: 0.6204597, y: 0.28016198, z: 0.37950242}
+  m_Center: {x: 0.0051836977, y: 0.8197831, z: 1.8061621}
 --- !u!114 &5931189280293279718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2419,8 +2587,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.6204597, y: 0.79791594, z: 0.83058715}
-  m_Center: {x: 0.0051836967, y: 0.98578143, z: 1.8166133}
+  m_Size: {x: 0.6204597, y: 0.2515307, z: 0.3845888}
+  m_Center: {x: 0.0051836977, y: 0.8880299, z: 1.7771626}
 --- !u!114 &2800901526300762544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2571,8 +2739,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.6204597, y: 0.79791594, z: 0.83058715}
-  m_Center: {x: 0.0051836967, y: 0.98578143, z: 1.8166133}
+  m_Size: {x: 0.6204597, y: 0.2735201, z: 0.4126205}
+  m_Center: {x: 0.0051836977, y: 0.8256337, z: 1.7844207}
 --- !u!114 &8216696756592722125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2857,8 +3025,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.6204597, y: 0.79791594, z: 0.83058715}
-  m_Center: {x: 0.0051836967, y: 0.98578143, z: 1.8166133}
+  m_Size: {x: 0.6204597, y: 0.2003334, z: 0.40017402}
+  m_Center: {x: 0.0051836977, y: 0.8683224, z: 1.772318}
 --- !u!114 &4762441747337938978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3303,8 +3471,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.6204597, y: 0.79791594, z: 0.83058715}
-  m_Center: {x: 0.0051836967, y: 0.98578143, z: 1.8166133}
+  m_Size: {x: 0.6204597, y: 0.21456584, z: 0.45134565}
+  m_Center: {x: 0.0051836977, y: 0.8482002, z: 1.7717023}
 --- !u!114 &4684635152360746504
 MonoBehaviour:
   m_ObjectHideFlags: 0
